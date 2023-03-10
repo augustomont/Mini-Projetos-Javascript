@@ -1,2 +1,2 @@
 # mini-projetos-javascript
- pequenos projetos e aplicações usando JavaScript
+ Pequenos projetos e aplicações usando JavaScript
