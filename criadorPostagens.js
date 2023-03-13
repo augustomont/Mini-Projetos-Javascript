@@ -1,7 +1,25 @@
+
+
+//Função construção, para fazer postagens
+function Postagem(titulo,mensagem,autor){
+    return{
+        titulo,
+        mensagem,
+        autor,
+        visualizacoes: 0,
+        comentarios: [],
+        estaAoVivo: true
+    }
+}
+
+let postagem = Postagem('a','b','c')
+console.log(postagem)
+
+
+
 //Criando uma variavel pra postar uma mensagem automatica
 
-
-let postagem = {
+/*let postagens = {
     titulo: 'a',
     mensagem: 'b',
     autor: 'c',
@@ -14,3 +32,5 @@ let postagem = {
 }
 
 console.log(postagem)
+
+*/
