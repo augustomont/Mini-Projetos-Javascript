@@ -51,31 +51,46 @@ console.log(numeros.includes('a'))
 console.log(numeros.includes('f'))
 
 
-//Combinando uma Array com outra
+// --- Combinando uma Array com outra
 //criar uma nova arrays
 const numeros2 = [11,12,13,14,15]
 console.log(numeros2)
 
+/*jeito antigo de combinar
 let combinado = numeros.concat(numeros2)
+ */
+
+//Combinar usdando o Spread (...)
+let combinado = [...numeros,'outro elemento que eu quero incluir',...numeros2]
 console.log(combinado)
 
-
 //Cortar um pedaço da Array
-let cortado = combinado.slice(5,10)
+let cortado = combinado.slice(5,12)
 console.log(cortado)
 
-
+//INcluir alguma coisa entre um elemento e outro
+let incluir = combinado.join('^^')
+console.log(incluir)
 
 // --- Esvaziando uma Array
 numeros.length = 0
 numeros2.length = 0
 combinado.length = 0
-console.log(numeros,numeros2,combinado)
+cortado.length = 0
+
+console.log(numeros,numeros2,combinado,cortado)
+
+
+//Separandos palavras de uma frase
+
+let frase = 'Hoje é o dia do seu aniversario'
+let fraseCortada = frase.split(' ')
+console.log(fraseCortada)
+console.log(fraseCortada.join('-'))
 
 
 
-
-//Elementos de referencia
+//--- Elementos de referencia
 
 const marcas = [
     {id:1, nome:'a'},
