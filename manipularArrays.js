@@ -2,7 +2,7 @@
 
 
 //Elementos primitivos
-const numeros = [1,2,3,4,5]
+const numeros = [1,2,3,4,5,6,7,8]
 console.log(numeros)
 
 
@@ -13,13 +13,27 @@ numeros.unshift('a')
 console.log(numeros)
 
 //No Meio
-numeros.splice(2,0,'b')
+numeros.splice(4,0,'b')
 console.log(numeros)
 
 //No final
 numeros.push('c')
 console.log(numeros)
 
+
+//Removendo elementos
+
+//no Inicio
+numeros.shift()
+console.log(numeros)
+
+//no Final
+numeros.pop()
+console.log(numeros)
+
+//no Meio
+numeros.splice(4,1)
+console.log(numeros)
 
 
 //Consultando elementos usando numero de referencia
@@ -35,6 +49,29 @@ console.log(numeros.lastIndexOf('a'))
 //Saber se um elemento esta dentro da Array
 console.log(numeros.includes('a'))
 console.log(numeros.includes('f'))
+
+
+//Combinando uma Array com outra
+//criar uma nova arrays
+const numeros2 = [11,12,13,14,15]
+console.log(numeros2)
+
+let combinado = numeros.concat(numeros2)
+console.log(combinado)
+
+
+//Cortar um pedaço da Array
+let cortado = combinado.slice(5,10)
+console.log(cortado)
+
+
+
+// --- Esvaziando uma Array
+numeros.length = 0
+numeros2.length = 0
+combinado.length = 0
+console.log(numeros,numeros2,combinado)
+
 
 
 
