@@ -1,0 +1,33 @@
+<!-- Necessita Revisão --> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function verificarLista(){
+    nomeConvidado = document.getElementById(nome).value;
+    convidadoCris = ['Amanda', 'Dai', 'Gus', 'Augusto']
+    if (convidadoCris.includes(convidadoPor)){
+        document.getElementById(entradaPermitida).innerText = 'Você pode entrar!'}
+        else{
+            document.getElementById(entradaPermitida).innerText = 'Você não pode entrar'
+        }
+    }
+
+    </script>
+</head>
+<body>
+    <h1>Lista de Convidados</h1>
+    <h2>Bem vindo senhor (a):</h2>
+    <input type="text" id="nome" placeholder="Digite seu nome">
+    <h2>Quem te convidou para esse evento?</h2>
+    <input type="text" id="convidadoPor" placeholder="Quem te Convidou?">
+    <button onclick="verificarLista()">Verificar se estou na lista</button>
+    <h1>Você esta na lista?</h1>
+    <label for="" id="entradaPermitida">Pesquisando...</label>
+</body>
+</html>
